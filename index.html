@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="description" content="Mainak Roy — Creative thinker, digital communicator, and technology enthusiast." />
+  <title>Mainak Roy | Creative & Media Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f2efe8;--ink:#171714;--muted:#6c6b63;--orange:#ff5a36;--line:#d8d4ca;--paper:#fffdf8}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:25px 0;border-bottom:1px solid var(--line);font-family:'DM Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+    .brand{font-weight:500}.navlinks{display:flex;gap:25px;color:var(--muted)}.navlinks a:hover{color:var(--orange)}
+    .hero{padding:92px 0 76px;display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:end}
+    .eyebrow,.kicker{font:12px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--orange)}
+    h1{font-size:clamp(58px,9vw,112px);line-height:.91;letter-spacing:-.075em;margin:22px 0 26px;font-weight:700}
+    h1 em{font-family:'Playfair Display',serif;font-weight:600;color:var(--orange);letter-spacing:-.06em}
+    .intro{font-size:clamp(17px,2vw,21px);line-height:1.6;max-width:650px;color:#4e4d47}
+    .hero-note{border-left:1px solid var(--ink);padding:12px 0 12px 22px;margin-bottom:10px}
+    .hero-note strong{display:block;font:italic 25px 'Playfair Display',serif;margin-bottom:12px}.hero-note p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+    .ticker{background:var(--ink);color:var(--bg);padding:15px 0;overflow:hidden;white-space:nowrap;font:12px 'DM Mono',monospace;letter-spacing:.13em;text-transform:uppercase}
+    .ticker span{color:var(--orange);padding:0 18px}
+    section{padding:85px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:42px}
+    h2{font-size:clamp(36px,5vw,58px);letter-spacing:-.06em;line-height:1;margin:10px 0 0}
+    .number{font:12px 'DM Mono',monospace;color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about-grid p{font-size:17px;line-height:1.85;color:#55544d;margin:0 0 18px}
+    .pullquote{font:italic clamp(27px,4vw,43px)/1.25 'Playfair Display',serif;letter-spacing:-.025em}
+    .pullquote span{color:var(--orange)}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .card{background:var(--paper);padding:28px;border:1px solid var(--line);min-height:190px;transition:transform .2s,border-color .2s}
+    .card:hover{transform:translateY(-4px);border-color:var(--orange)}.card .tag{font:11px 'DM Mono',monospace;color:var(--orange);text-transform:uppercase;letter-spacing:.1em}
+    .card h3{font-size:24px;letter-spacing:-.04em;margin:22px 0 10px}.card p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+    .experience{display:grid;grid-template-columns:.7fr 1.3fr;gap:55px}.role{font-size:25px;font-weight:700;letter-spacing:-.04em}.company{font:12px 'DM Mono',monospace;color:var(--orange);margin-top:9px}
+    .experience p,.experience li{color:#55544d;line-height:1.8;font-size:15px}.experience ul{padding-left:18px;margin-top:12px}
+    .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.principle{border-top:2px solid var(--ink);padding-top:17px}.principle b{font:italic 28px 'Playfair Display',serif}.principle p{font-size:14px;color:var(--muted);line-height:1.7}
+    .contact{background:var(--orange);color:#171714;padding:70px 0}.contact h2{font-size:clamp(42px,7vw,82px);max-width:780px}.contact-row{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-top:35px}
+    .contact p{max-width:480px;line-height:1.7}.email{font:13px 'DM Mono',monospace;border-bottom:1px solid #171714;padding-bottom:8px}
+    footer{padding:22px 0;font:11px 'DM Mono',monospace;color:var(--muted);display:flex;justify-content:space-between;gap:15px}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:65px 0 55px;gap:20px}.hero-note{max-width:420px}.about-grid,.experience{grid-template-columns:1fr;gap:30px}.cards{grid-template-columns:1fr}.principles{grid-template-columns:1fr;gap:22px}.navlinks{gap:12px}.navlinks a:nth-child(2){display:none}.section-head{align-items:start}.contact-row{display:block}.email{display:inline-block;margin-top:15px}section{padding:65px 0}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#">MR / PORTFOLIO</a>
+      <div class="navlinks"><a href="#about">About</a><a href="#work">Strengths</a><a href="#contact">Connect ↗</a></div>
+      <span>HYD · INDIA</span>
+    </nav>
+    <header class="hero">
+      <div>
+        <div class="eyebrow">Creative & Media · 2026</div>
+        <h1>Ideas with<br><em> a point of view.</em></h1>
+        <p class="intro">I'm Mainak Roy — a technology professional with a creative instinct for communication, storytelling, and making complex ideas feel simple.</p>
+      </div>
+      <aside class="hero-note">
+        <strong>Curious by nature.<br>Clear by design.</strong>
+        <p>I bring together analytical thinking, thoughtful communication, and a willingness to explore fresh ways of creating and sharing ideas.</p>
+      </aside>
+    </header>
+  </div>
+  <div class="ticker">CREATIVE THINKING <span>✳</span> DIGITAL STORYTELLING <span>✳</span> TECHNOLOGY & CULTURE <span>✳</span> CLEAR COMMUNICATION <span>✳</span> CREATIVE THINKING <span>✳</span></div>
+
+  <main class="wrap">
+    <section id="about">
+      <div class="section-head"><div><div class="kicker">01 / The person behind the ideas</div><h2>A little about me.</h2></div><div class="number">[ INTRO ]</div></div>
+      <div class="about-grid">
+        <div>
+          <p>I work in infrastructure and cloud support, where clarity matters. Every day, I translate technical issues into understandable updates, collaborate with different teams, and turn information into useful documentation.</p>
+          <p>That experience has shaped how I approach creative work: understand the subject, find the human angle, and communicate it in a way that feels direct, useful, and engaging.</p>
+        </div>
+        <div class="pullquote">“Good communication doesn't just share information. It gives an idea <span>meaning.</span>”</div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="section-head"><div><div class="kicker">02 / What I bring</div><h2>Creative toolkit.</h2></div><div class="number">[ STRENGTHS ]</div></div>
+      <div class="cards">
+        <article class="card"><div class="tag">01 — Words</div><h3>Content & storytelling</h3><p>Turning information into clear, approachable writing — from short-form copy and professional communication to explainers and narratives.</p></article>
+        <article class="card"><div class="tag">02 — Ideas</div><h3>Research & concept thinking</h3><p>Exploring a subject, connecting details, spotting the central message, and shaping ideas for the audience they are meant to reach.</p></article>
+        <article class="card"><div class="tag">03 — Clarity</div><h3>Digital communication</h3><p>Creating structured updates, knowledge articles, reports, and presentations that make complex topics easier to understand.</p></article>
+        <article class="card"><div class="tag">04 — Curiosity</div><h3>Technology & media</h3><p>Interested in the intersection of digital culture, emerging technology, AI-enabled creative tools, and new ways to communicate.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><div><div class="kicker">03 / Experience that travels</div><h2>My professional lens.</h2></div><div class="number">[ BACKGROUND ]</div></div>
+      <div class="experience">
+        <div><div class="role">Infrastructure &<br>Cloud Support Engineer</div><div class="company">TECH MAHINDRA · HYDERABAD</div></div>
+        <div>
+          <p>Working in a global IT services environment has helped me build skills that translate naturally into creative and media work:</p>
+          <ul>
+            <li>Communicating with international stakeholders and cross-functional teams.</li>
+            <li>Writing clear incident updates, process documents, and knowledge articles.</li>
+            <li>Breaking down complex technical information for different audiences.</li>
+            <li>Researching issues, evaluating information, and presenting practical solutions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><div><div class="kicker">04 / The way I work</div><h2>Three things I value.</h2></div><div class="number">[ APPROACH ]</div></div>
+      <div class="principles">
+        <div class="principle"><b>Stay curious.</b><p>Ask better questions, explore unfamiliar subjects, and keep learning from people and ideas.</p></div>
+        <div class="principle"><b>Make it clear.</b><p>Respect the audience's time. Use language and structure that make the message easy to follow.</p></div>
+        <div class="principle"><b>Keep it human.</b><p>Bring empathy, context, and a distinct point of view to every piece of communication.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="kicker" style="color:#171714">05 / Let's make something meaningful</div>
+      <h2>Open to ideas, collaboration & creative challenges.</h2>
+      <div class="contact-row">
+        <p>I'm looking forward to contributing curiosity, clear thinking, and a fresh perspective to creative and media projects.</p>
+        <a class="email" href="mailto:YOUR_EMAIL@example.com">GET IN TOUCH ↗</a>
+      </div>
+    </div>
+  </section>
+  <div class="wrap"><footer><span>© 2026 MAINAK ROY</span><span>MADE WITH CURIOSITY / HYDERABAD, INDIA</span></footer></div>
+</body>
+</html>
